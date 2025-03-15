@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/synergy/static/css/main.cfe580ba.css",
+    "main.js": "/synergy/static/js/main.3a83f310.js",
+    "static/js/453.370c63fc.chunk.js": "/synergy/static/js/453.370c63fc.chunk.js",
+    "index.html": "/synergy/index.html",
+    "main.cfe580ba.css.map": "/synergy/static/css/main.cfe580ba.css.map",
+    "main.3a83f310.js.map": "/synergy/static/js/main.3a83f310.js.map",
+    "453.370c63fc.chunk.js.map": "/synergy/static/js/453.370c63fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfe580ba.css",
+    "static/js/main.3a83f310.js"
+  ]
+}
