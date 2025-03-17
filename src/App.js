@@ -155,7 +155,7 @@ const App = () => {
             <div>
               <div className="flex items-center mb-4 space-x-2">
                 <div className="px-3 py-1 bg-orange-100 border border-orange-200 rounded-full text-orange-600 text-sm font-medium">
-                  AI Research Project f
+                  AI Research Project
                 </div>
                 <div className="px-3 py-1 bg-blue-100 border border-blue-200 rounded-full text-blue-600 text-sm font-medium">
                   98.83% Accurate
