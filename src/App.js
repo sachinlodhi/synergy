@@ -65,7 +65,7 @@ const App = () => {
     accuracy: false,
     forecasts: false,
     partners: false,
-    cta: false
+    about: false
   });
   
   const [scrollY, setScrollY] = useState(0);
@@ -84,7 +84,7 @@ const App = () => {
       accuracy: false,
       forecasts: false,
       partners: false,
-      cta: false
+      about: false
     });
     
     const handleScroll = () => {
@@ -97,7 +97,7 @@ const App = () => {
         accuracy: window.scrollY > 900,
         forecasts: window.scrollY > 1100,
         partners: window.scrollY > 1600,
-        cta: window.scrollY > 2000
+        about: window.scrollY > 2000
       });
     };
     
@@ -108,36 +108,40 @@ const App = () => {
   return (
     <div className="bg-white min-h-screen">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
-        <div className="container mx-auto px-6 py-3 flex justify-between items-center">
-          <div className="flex items-center">
-            <img src={logo} alt="Synergy Logo" className="h-10 mr-3" />
-          </div>
-          <div className="hidden md:flex space-x-8">
-            <a href="#features" className="text-gray-800 hover:text-orange-500 transition duration-300 ease-in-out flex items-center group font-medium">
-              Features
-              <span className="w-0 group-hover:w-full h-0.5 bg-orange-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
-            </a>
-            <a href="#accuracy" className="text-gray-800 hover:text-blue-500 transition duration-300 ease-in-out flex items-center group font-medium">
-              Performance
-              <span className="w-0 group-hover:w-full h-0.5 bg-blue-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
-            </a>
-            <a href="#forecasts" className="text-gray-800 hover:text-green-500 transition duration-300 ease-in-out flex items-center group font-medium">
-              Forecasts
-              <span className="w-0 group-hover:w-full h-0.5 bg-green-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
-            </a>
-            <a href="#partners" className="text-gray-800 hover:text-purple-500 transition duration-300 ease-in-out flex items-center group font-medium">
-              Partners
-              <span className="w-0 group-hover:w-full h-0.5 bg-purple-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
-            </a>
-          </div>
-          <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-5 py-2 rounded-lg shadow-md shadow-orange-200 transition duration-300 ease-in-out flex items-center font-medium transform hover:-translate-y-0.5">
-            <span>Demo</span>
-            <ArrowRight size={16} className="ml-2" />
-          </button>
-        </div>
-      </nav>
-
+      {/* Navbar */}
+<nav className="fixed top-0 left-0 right-0 bg-white bg-opacity-95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
+  <div className="container mx-auto px-6 py-3 flex justify-between items-center">
+    <div className="flex items-center">
+      <img src={logo} alt="Synergy Logo" className="h-10 mr-3" />
+    </div>
+    <div className="hidden md:flex space-x-8">
+      <a href="#features" className="text-gray-800 hover:text-orange-500 transition duration-300 ease-in-out flex items-center group font-medium">
+        Research
+        <span className="w-0 group-hover:w-full h-0.5 bg-orange-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
+      </a>
+      <a href="#accuracy" className="text-gray-800 hover:text-blue-500 transition duration-300 ease-in-out flex items-center group font-medium">
+        Performance
+        <span className="w-0 group-hover:w-full h-0.5 bg-blue-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
+      </a>
+      <a href="#forecasts" className="text-gray-800 hover:text-green-500 transition duration-300 ease-in-out flex items-center group font-medium">
+        Forecasts
+        <span className="w-0 group-hover:w-full h-0.5 bg-green-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
+      </a>
+      <a href="#partners" className="text-gray-800 hover:text-purple-500 transition duration-300 ease-in-out flex items-center group font-medium">
+        Collaborators
+        <span className="w-0 group-hover:w-full h-0.5 bg-purple-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
+      </a>
+      <a href="#about" className="text-gray-800 hover:text-orange-500 transition duration-300 ease-in-out flex items-center group font-medium">
+        About Us
+        <span className="w-0 group-hover:w-full h-0.5 bg-orange-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
+      </a>
+    </div>
+    <a href="#contact-form" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-5 py-2 rounded-lg shadow-md shadow-orange-200 transition duration-300 ease-in-out flex items-center font-medium transform hover:-translate-y-0.5">
+  <span>Contact Us</span>
+  <ArrowRight size={16} className="ml-2" />
+</a>
+  </div>
+</nav>
       {/* Hero Section */}
       <section className="pt-36 pb-24 px-6 relative overflow-hidden bg-gray-50">
         <div className="absolute inset-0 opacity-20">
@@ -151,7 +155,7 @@ const App = () => {
             <div>
               <div className="flex items-center mb-4 space-x-2">
                 <div className="px-3 py-1 bg-orange-100 border border-orange-200 rounded-full text-orange-600 text-sm font-medium">
-                  AI-Powered Platform
+                  AI Research Project
                 </div>
                 <div className="px-3 py-1 bg-blue-100 border border-blue-200 rounded-full text-blue-600 text-sm font-medium">
                   98.83% Accurate
@@ -160,19 +164,19 @@ const App = () => {
               <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
                 <span className="block mb-2">Next-Gen</span>
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-blue-500">Energy Forecasting</span>
-                <span className="block mt-2">for Tomorrow</span>
+                <span className="block mt-2">Research</span>
               </h1>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Empowering energy market participants with cutting-edge AI-driven forecasting tools to optimize operations, manage risk, and maximize profitability in volatile markets.
+                Our college research project on AI-driven energy market forecasting. We're developing cutting-edge algorithms to predict energy prices with unprecedented accuracy.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-lg shadow-md shadow-orange-200 transition duration-300 ease-in-out flex items-center font-medium transform hover:-translate-y-0.5">
-                  Get Started
+                <a href="#forecasts" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-lg shadow-md shadow-orange-200 transition duration-300 ease-in-out flex items-center font-medium transform hover:-translate-y-0.5">
+                  See Our Progress
                   <ArrowRight size={18} className="ml-2" />
-                </button>
-                <button className="bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 text-gray-800 px-6 py-3 rounded-lg transition duration-300 ease-in-out font-medium shadow-sm">
-                  Learn More
-                </button>
+                </a>
+                <a href="#about" className="bg-white hover:bg-gray-50 border border-gray-200 hover:border-gray-300 text-gray-800 px-6 py-3 rounded-lg transition duration-300 ease-in-out font-medium shadow-sm">
+                  About Our Team
+                </a>
               </div>
             </div>
             <div className="relative">
@@ -187,7 +191,7 @@ const App = () => {
                     <div className="relative mb-4">
                       <div className="text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-blue-500">98.83%</div>
                       <div className="absolute -top-3 -right-6 bg-green-100 text-green-600 text-xs px-2 py-1 rounded-md font-medium">
-                        Industry Leading
+                        Current Accuracy
                       </div>
                     </div>
                     <div className="text-gray-600 text-lg mb-6">Forecasting Accuracy</div>
@@ -220,15 +224,15 @@ const App = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section - Changed to Research */}
       <section id="features" className="py-24 px-6 bg-white relative">
         <div className={`container mx-auto max-w-6xl relative z-10 transition-all duration-1000 ease-out ${isVisible.features ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
             <div className="inline-block px-3 py-1 bg-orange-100 border border-orange-200 rounded-full text-orange-600 text-sm font-medium mb-4">
-              Cutting-Edge Features
+              Research Areas
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Comprehensive AI Solutions</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Our platform delivers integrated forecasting tools powered by state-of-the-art artificial intelligence and machine learning algorithms.</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Our Research Focus</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">The main areas of our academic research on energy forecasting with artificial intelligence and machine learning algorithms.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -242,11 +246,11 @@ const App = () => {
                 <TrendingUp className="text-orange-500" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-orange-600 transition-all duration-300">Price Forecasting</h3>
-              <p className="text-gray-600 mb-4">Short-term and long-term energy price predictions with unmatched accuracy across multiple markets.</p>
+              <p className="text-gray-600 mb-4">Research on short-term and long-term energy price predictions with deep learning and time series analysis.</p>
               
               <div className="pt-2">
-                <a href="#" className="text-orange-500 flex items-center text-sm font-medium group-hover:text-orange-600 transition-all duration-300 relative">
-                  Learn more 
+                <a href="#forecasts" className="text-orange-500 flex items-center text-sm font-medium group-hover:text-orange-600 transition-all duration-300 relative">
+                  See results 
                   <span className={`ml-1 transform transition-all duration-300 ${hoverStates.feature1 ? 'translate-x-1' : ''}`}>
                     <ChevronRight size={16} />
                   </span>
@@ -264,11 +268,11 @@ const App = () => {
                 <Clock className="text-blue-500" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-all duration-300">Renewable Generation</h3>
-              <p className="text-gray-600 mb-4">Predict renewable energy generation patterns with precision and confidence for optimal asset management.</p>
+              <p className="text-gray-600 mb-4">Exploring AI models for predicting renewable energy generation patterns based on weather and historical data.</p>
               
               <div className="pt-2">
-                <a href="#" className="text-blue-500 flex items-center text-sm font-medium group-hover:text-blue-600 transition-all duration-300 relative">
-                  Learn more 
+                <a href="#forecasts" className="text-blue-500 flex items-center text-sm font-medium group-hover:text-blue-600 transition-all duration-300 relative">
+                  See results 
                   <span className={`ml-1 transform transition-all duration-300 ${hoverStates.feature2 ? 'translate-x-1' : ''}`}>
                     <ChevronRight size={16} />
                   </span>
@@ -286,11 +290,11 @@ const App = () => {
                 <BarChart2 className="text-green-500" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-green-600 transition-all duration-300">Grid Congestion</h3>
-              <p className="text-gray-600 mb-4">Anticipate grid bottlenecks and optimize transmission strategies to avoid costly congestion charges.</p>
+              <p className="text-gray-600 mb-4">Developing algorithms to anticipate grid bottlenecks and optimize transmission path planning.</p>
               
               <div className="pt-2">
-                <a href="#" className="text-green-500 flex items-center text-sm font-medium group-hover:text-green-600 transition-all duration-300 relative">
-                  Learn more 
+                <a href="#forecasts" className="text-green-500 flex items-center text-sm font-medium group-hover:text-green-600 transition-all duration-300 relative">
+                  See results 
                   <span className={`ml-1 transform transition-all duration-300 ${hoverStates.feature3 ? 'translate-x-1' : ''}`}>
                     <ChevronRight size={16} />
                   </span>
@@ -316,16 +320,16 @@ const App = () => {
               </div>
               <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400 mb-2">98.83%</div>
               <p className="text-gray-800 text-lg">Prediction Accuracy</p>
-              <p className="text-gray-600 text-sm mt-2">Consistently outperforming traditional forecasting methods by over 20%</p>
+              <p className="text-gray-600 text-sm mt-2">Our current model outperforms traditional forecasting methods by over 20%</p>
             </div>
             
             <div className="bg-white p-8 rounded-2xl border border-gray-200 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-orange-100 group">
               <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-200 transition-all duration-300">
                 <Clock className="text-orange-500" size={24} />
               </div>
-              <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-400 mb-2">{"<"}1 month</div>
-              <p className="text-gray-800 text-lg">To Market Validation</p>
-              <p className="text-gray-600 text-sm mt-2">Quick implementation and tangible ROI for energy market participants</p>
+              <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-400 mb-2">6 months</div>
+              <p className="text-gray-800 text-lg">Research Progress</p>
+              <p className="text-gray-600 text-sm mt-2">Time spent developing our initial algorithms and testing methodology</p>
             </div>
             
             <div className="bg-white p-8 rounded-2xl border border-gray-200 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-green-100 group">
@@ -333,8 +337,8 @@ const App = () => {
                 <Users className="text-green-500" size={24} />
               </div>
               <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-400 mb-2">3+</div>
-              <p className="text-gray-800 text-lg">LOIs from Major Players</p>
-              <p className="text-gray-600 text-sm mt-2">Industry leaders recognize the value of our AI-powered platform</p>
+              <p className="text-gray-800 text-lg">Utility Collaborations</p>
+              <p className="text-gray-600 text-sm mt-2">Energy companies providing data and validating our research findings</p>
             </div>
           </div>
         </div>
@@ -345,16 +349,16 @@ const App = () => {
         <div className={`container mx-auto max-w-6xl relative z-10 transition-all duration-1000 ease-out ${isVisible.accuracy ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
             <div className="inline-block px-3 py-1 bg-blue-100 border border-blue-200 rounded-full text-blue-600 text-sm font-medium mb-4">
-              Industry-Leading Precision
+              Research Results
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Unmatched Performance</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Our AI models consistently outperform industry benchmarks and competitors by a significant margin.</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Model Performance</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Our AI models consistently achieve high accuracy scores during development and testing phases.</p>
           </div>
           
           <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg mb-12">
             <div className="mb-6">
               <h3 className="text-2xl font-semibold mb-2 text-gray-900">Model Accuracy Over Time</h3>
-              <p className="text-gray-600">Monthly improvement in prediction accuracy as our AI models learn and adapt.</p>
+              <p className="text-gray-600">Monthly improvement in prediction accuracy as our research progresses.</p>
             </div>
             <div className="h-80">
               <ResponsiveContainer width="100%" height="100%">
@@ -444,17 +448,17 @@ const App = () => {
         <div className={`container mx-auto max-w-6xl relative z-10 transition-all duration-1000 ease-out ${isVisible.forecasts ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
             <div className="inline-block px-3 py-1 bg-green-100 border border-green-200 rounded-full text-green-600 text-sm font-medium mb-4">
-              CAISO SP-15 Zone LMP Projections
+              Development Progress
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Real-World Forecasting</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Our AI platform delivers accurate price projections for major energy markets, helping traders make informed decisions.</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">CAISO SP-15 Zone LMP Projections</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Our current research progress with forecasting energy prices and validating against historical market data.</p>
           </div>
           
           <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg mb-8">
             <div className="mb-6 flex flex-col md:flex-row justify-between items-start md:items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-2 text-gray-900">CAISO SP-15 Zone LMP Projections</h3>
-                <p className="text-gray-600">See how our forecasts track actual market prices with remarkable precision.</p>
+                <h3 className="text-2xl font-semibold mb-2 text-gray-900">Forecast Validation Results</h3>
+                <p className="text-gray-600">Comparison between our AI-generated predictions and actual market values.</p>
               </div>
               
               <div className="flex space-x-2 mt-4 md:mt-0">
@@ -506,8 +510,8 @@ const App = () => {
                 <Clock className="text-green-500 group-hover:text-green-600 transition-all duration-300" size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 group-hover:text-green-600 transition-all duration-300">24-Hour Forecasts</h3>
-                <p className="text-gray-600 text-sm">Detailed hourly price projections to optimize daily trading and operational decisions.</p>
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 group-hover:text-green-600 transition-all duration-300">24-Hour Forecast Research</h3>
+                <p className="text-gray-600 text-sm">Development of AI models for detailed hourly price projections with high accuracy.</p>
               </div>
             </div>
             
@@ -516,8 +520,8 @@ const App = () => {
                 <Calendar className="text-orange-500 group-hover:text-orange-600 transition-all duration-300" size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 group-hover:text-orange-600 transition-all duration-300">Weekly Outlooks</h3>
-                <p className="text-gray-600 text-sm">Extended forecasts to support medium-term planning and risk management strategies.</p>
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 group-hover:text-orange-600 transition-all duration-300">Weekly Forecast Models</h3>
+                <p className="text-gray-600 text-sm">Extended time-series analysis algorithms for longer-term prediction horizons.</p>
               </div>
             </div>
             
@@ -526,101 +530,142 @@ const App = () => {
                 <Star className="text-blue-500 group-hover:text-blue-600 transition-all duration-300" size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900 group-hover:text-blue-600 transition-all duration-300">Custom Timeframes</h3>
-                <p className="text-gray-600 text-sm">Flexible projection options tailored to your specific market participation needs.</p>
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 group-hover:text-blue-600 transition-all duration-300">Custom Forecast Windows</h3>
+                <p className="text-gray-600 text-sm">Research on flexible time-window prediction algorithms for various applications.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Partners Section */}
+      {/* Partners Section - Changed to Collaborators */}
       <section id="partners" className="py-24 px-6 bg-white relative">
         <div className={`container mx-auto max-w-6xl relative z-10 transition-all duration-1000 ease-out ${isVisible.partners ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="text-center mb-16">
             <div className="inline-block px-3 py-1 bg-purple-100 border border-purple-200 rounded-full text-purple-600 text-sm font-medium mb-4">
-              Strategic Alliances
+              Research Partners
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">On the Verge of Partnership</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">We're finalizing Letters of Intent with major energy market players who recognize our platform's potential.</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Our Collaborators</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Energy companies and academic partners working with us on this research project.</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white h-40 rounded-2xl flex items-center justify-center border border-gray-200 hover:border-purple-300 transition-all duration-300 ease-in-out group shadow-lg hover:shadow-purple-100">
-              <div className="text-gray-700 font-semibold text-xl group-hover:text-purple-600 transition-all duration-300">Energy Corp.</div>
+              <div className="text-gray-700 font-semibold text-xl group-hover:text-purple-600 transition-all duration-300">Aypa Power</div>
             </div>
             <div className="bg-white h-40 rounded-2xl flex items-center justify-center border border-gray-200 hover:border-purple-300 transition-all duration-300 ease-in-out group shadow-lg hover:shadow-purple-100">
-              <div className="text-gray-700 font-semibold text-xl group-hover:text-purple-600 transition-all duration-300">PowerGrid Inc.</div>
+              <div className="text-gray-700 font-semibold text-xl group-hover:text-purple-600 transition-all duration-300">Black Hills Energy</div>
             </div>
             <div className="bg-white h-40 rounded-2xl flex items-center justify-center border border-gray-200 hover:border-purple-300 transition-all duration-300 ease-in-out group shadow-lg hover:shadow-purple-100">
-              <div className="text-gray-700 font-semibold text-xl group-hover:text-purple-600 transition-all duration-300">RenewTech</div>
-            </div>
-            <div className="bg-white h-40 rounded-2xl flex items-center justify-center border border-gray-200 hover:border-purple-300 transition-all duration-300 ease-in-out group shadow-lg hover:shadow-purple-100">
-              <div className="text-gray-700 font-semibold text-xl group-hover:text-purple-600 transition-all duration-300">Global Energy</div>
+              <div className="text-gray-700 font-semibold text-xl group-hover:text-purple-600 transition-all duration-300">Pathway Power</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="contact" className="py-24 px-6 bg-gray-50 relative">
+      {/* About Us Section - Replaced CTA */}
+      <section id="about" className="py-24 px-6 bg-gray-50 relative">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-bl from-orange-500/30 to-transparent"></div>
           <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gradient-to-tr from-blue-500/30 to-transparent"></div>
         </div>
         
-        <div className={`container mx-auto max-w-4xl text-center relative z-10 transition-all duration-1000 ease-out transform ${isVisible.cta ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
+        <div className={`container mx-auto max-w-4xl text-center relative z-10 transition-all duration-1000 ease-out transform ${isVisible.about ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
           <div className="inline-block px-3 py-1 bg-orange-100 border border-orange-200 rounded-full text-orange-600 text-sm font-medium mb-4">
-            Limited Early Access
+            Our Team
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Ready to Transform Your Energy Trading?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">About The Project</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-lg">
-            Join the energy market revolution with our cutting-edge AI forecasting platform and gain a competitive advantage.
+            Synergy is a research project developed by ambitious college students exploring the application of artificial intelligence to energy market forecasting.
           </p>
           
-          <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg mb-12">
-            <div className="grid md:grid-cols-3 gap-8 text-left">
-              <div className="flex items-start">
-                <div className="mr-4 mt-1 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
-                  <Check className="text-green-500" size={16} />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1 text-gray-900">No Setup Costs</h3>
-                  <p className="text-gray-600 text-sm">Zero infrastructure required to start using our platform</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="mr-4 mt-1 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center">
-                  <Check className="text-blue-500" size={16} />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1 text-gray-900">Free Trial</h3>
-                  <p className="text-gray-600 text-sm">Test our platform with your historical data</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="mr-4 mt-1 w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center">
-                  <Check className="text-orange-500" size={16} />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-1 text-gray-900">Dedicated Support</h3>
-                  <p className="text-gray-600 text-sm">Our team provides personalized onboarding assistance</p>
-                </div>
-              </div>
-            </div>
+          <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg mb-12 text-left">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Our Mission</h3>
+            <p className="text-gray-600 mb-6">
+              We're exploring how advanced AI techniques can revolutionize energy market forecasting through academic research. Our goal is to develop models that can predict energy prices with unprecedented accuracy, helping to understand market dynamics and improve grid efficiency.
+            </p>
+            
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">The Team</h3>
+            <p className="text-gray-600 mb-6">
+              We are a group of two driven people from AI and mechanical background and with the mission to revolutionalize the green energy market.
+            </p>
+            
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900">Project Status</h3>
+            <p className="text-gray-600">
+              This is an ongoing academic research project. We're currently in the development and validation phase, working with energy companies to test our models against real-world data. This website showcases our current progress and research findings.
+            </p>
           </div>
           
-          <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 rounded-lg shadow-lg shadow-orange-200 transition duration-300 ease-in-out flex items-center mx-auto font-medium transform hover:-translate-y-1">
-            Request Early Access
-            <ArrowRight size={18} className="ml-2" />
-          </button>
+          <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg" id="contact-form">
+            <h3 className="text-2xl font-semibold mb-4 text-gray-900 text-center">Contact Our Team</h3>
+            <p className="text-gray-600 mb-6 text-center">
+              Have questions about our research or interested in collaborating? Reach out to us!
+            </p>
+            
+            <form className="space-y-6" action="mailto:sachinlodhi8614@gmail.com" method="POST" encType="text/plain">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    placeholder="John Doe" 
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition duration-200 outline-none"
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="you@example.com" 
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition duration-200 outline-none"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject"
+                  placeholder="Research Collaboration" 
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition duration-200 outline-none"
+                  required
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                <textarea 
+                  id="message" 
+                  name="message"
+                  rows="4" 
+                  placeholder="Tell us how we can help or what you're interested in..." 
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition duration-200 outline-none resize-none"
+                  required
+                ></textarea>
+              </div>
+              
+              <button 
+                type="submit" 
+                className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-lg shadow-md shadow-orange-200 transition duration-300 ease-in-out flex items-center justify-center font-medium transform hover:-translate-y-0.5"
+              >
+                Send Message
+                <ArrowRight size={18} className="ml-2" />
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-gray-900 text-white">
+      <footer className="py-12 px-6 bg-white border-t border-gray-200">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-8 md:mb-0 flex items-center">
@@ -628,14 +673,14 @@ const App = () => {
             </div>
             
             <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 mb-8 md:mb-0">
-              <a href="#features" className="text-gray-300 hover:text-orange-400 transition">Features</a>
-              <a href="#accuracy" className="text-gray-300 hover:text-blue-400 transition">Performance</a>
-              <a href="#forecasts" className="text-gray-300 hover:text-green-400 transition">Forecasts</a>
-              <a href="#partners" className="text-gray-300 hover:text-purple-400 transition">Partners</a>
-              <a href="#contact" className="text-gray-300 hover:text-orange-400 transition">Contact</a>
+              <a href="#features" className="text-gray-600 hover:text-orange-500 transition">Research</a>
+              <a href="#accuracy" className="text-gray-600 hover:text-blue-500 transition">Performance</a>
+              <a href="#forecasts" className="text-gray-600 hover:text-green-500 transition">Forecasts</a>
+              <a href="#partners" className="text-gray-600 hover:text-purple-500 transition">Collaborators</a>
+              <a href="#about" className="text-gray-600 hover:text-orange-500 transition">About Us</a>
             </div>
             
-            <div className="text-gray-400 text-sm">
+            <div className="text-gray-500 text-sm">
               © 2025 Synergy. All rights reserved. Built by ambitious college students.
             </div>
           </div>
