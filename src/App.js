@@ -155,7 +155,7 @@ const App = () => {
             <div>
               <div className="flex items-center mb-4 space-x-2">
                 <div className="px-3 py-1 bg-orange-100 border border-orange-200 rounded-full text-orange-600 text-sm font-medium">
-                  AI Research Project
+                  AI Research Project f
                 </div>
                 <div className="px-3 py-1 bg-blue-100 border border-blue-200 rounded-full text-blue-600 text-sm font-medium">
                   98.83% Accurate
@@ -167,7 +167,7 @@ const App = () => {
                 <span className="block mt-2">Research</span>
               </h1>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Our college research project on AI-driven energy market forecasting. We're developing cutting-edge algorithms to predict energy prices with unprecedented accuracy.
+                Our research project on AI-driven energy market forecasting. We're developing cutting-edge algorithms to predict energy prices with unprecedented accuracy.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="#forecasts" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-6 py-3 rounded-lg shadow-md shadow-orange-200 transition duration-300 ease-in-out flex items-center font-medium transform hover:-translate-y-0.5">
@@ -545,8 +545,8 @@ const App = () => {
             <div className="inline-block px-3 py-1 bg-purple-100 border border-purple-200 rounded-full text-purple-600 text-sm font-medium mb-4">
               Research Partners
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Our Collaborators</h2>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Energy companies and academic partners working with us on this research project.</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Our Potential Collaborators</h2>
+            <p className="text-gray-600 max-w-3xl mx-auto text-lg">Energy companies and academic partners on the verge of signing LOI with us for pilot project.</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
@@ -681,7 +681,7 @@ const App = () => {
             </div>
             
             <div className="text-gray-500 text-sm">
-              © 2025 Synergy. All rights reserved. Built by ambitious college students.
+              © 2025 Synergy. All rights reserved. Built by team Synergy.
             </div>
           </div>
         </div>
