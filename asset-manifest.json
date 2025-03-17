@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/synergy/static/css/main.d6b19c68.css",
-    "main.js": "/synergy/static/js/main.b0255b29.js",
+    "main.js": "/synergy/static/js/main.98dcb9b9.js",
     "static/js/453.370c63fc.chunk.js": "/synergy/static/js/453.370c63fc.chunk.js",
     "static/media/daily-forecast.png": "/synergy/static/media/daily-forecast.58d115c1d426e56adf57.png",
     "static/media/weekly-forecast.png": "/synergy/static/media/weekly-forecast.189b8c7168cbd7fd2116.png",
     "static/media/synergy_logo.jpeg": "/synergy/static/media/synergy_logo.962d026e4a9ff1eca04f.jpeg",
     "index.html": "/synergy/index.html",
     "main.d6b19c68.css.map": "/synergy/static/css/main.d6b19c68.css.map",
-    "main.b0255b29.js.map": "/synergy/static/js/main.b0255b29.js.map",
+    "main.98dcb9b9.js.map": "/synergy/static/js/main.98dcb9b9.js.map",
     "453.370c63fc.chunk.js.map": "/synergy/static/js/453.370c63fc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6b19c68.css",
-    "static/js/main.b0255b29.js"
+    "static/js/main.98dcb9b9.js"
   ]
 }
