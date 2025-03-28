@@ -148,7 +148,7 @@ const App = () => {
             <span className="inline-block">Progress</span>
             <span className="block w-0 group-hover:w-full h-0.5 bg-green-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
           </a>
-          <a href="#about" className="text-gray-800 hover:text-orangegit-500 transition duration-300 ease-in-out group font-medium whitespace-nowrap">
+          <a href="#about" className="text-gray-800 hover:text-orange-500 transition duration-300 ease-in-out group font-medium whitespace-nowrap">
             <span className="inline-block">About Us</span>
             <span className="block w-0 group-hover:w-full h-0.5 bg-green-500 mt-0.5 transition-all duration-300 ease-in-out"></span>
           </a>
