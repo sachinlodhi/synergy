@@ -1,0 +1,20 @@
+npm run
+  244  npm start
+  245  git init
+  246  git add .
+  247  git commit -m "light theme"
+  248  git push -u origin main
+  249  npm build
+  250  npm run build
+  251  npm run
+  252  npm start
+  253  npm run build
+  254  git add .
+  255  git commit -m "fixed"
+  256  git push -u origin main
+  257  npm install --save-dev gh-pages
+  258  npm run deploy
+  259  git add .
+  260  git commit -m "minor fixes"
+  261  git push -u origin main
+  262  npm run deploy
